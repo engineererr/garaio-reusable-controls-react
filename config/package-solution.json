@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "garaio-reusable-controls-react-client-side-solution",
+    "id": "75123613-1748-4686-af7c-e4a5bdbcbb58",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true
+  },
+  "paths": {
+    "zippedPackage": "solution/garaio-reusable-controls-react.sppkg"
+  }
+}
