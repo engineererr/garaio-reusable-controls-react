@@ -1,4 +1,4 @@
-import { ISPListItems } from './../common/SPEntities';
+import { ISPListItems } from '../common/SPEntities';
 import { ISPService, IListItemsOptions } from "./ISPService";
 
 export default class SPServiceMock implements ISPService {

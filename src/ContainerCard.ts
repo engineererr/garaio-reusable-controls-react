@@ -1,1 +1,1 @@
-export * from './controls/containerCard/index';
+export * from './controls/containerCard';

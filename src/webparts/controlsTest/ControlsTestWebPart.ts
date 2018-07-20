@@ -1,3 +1,5 @@
+import { ApplicationCustomizerContext } from '@microsoft/sp-application-base';
+import { WebPartContext } from '@microsoft/sp-webpart-base';
 import * as React from 'react';
 import * as ReactDom from 'react-dom';
 import { Version } from '@microsoft/sp-core-library';
@@ -12,15 +14,17 @@ import ControlsTest from './components/ControlsTest';
 import { IControlsTestProps } from './components/IControlsTestProps';
 
 export interface IControlsTestWebPartProps {
+  context: WebPartContext | ApplicationCustomizerContext;
   description: string;
 }
 
 export default class ControlsTestWebPart extends BaseClientSideWebPart<IControlsTestWebPartProps> {
 
   public render(): void {
-    const element: React.ReactElement<IControlsTestProps > = React.createElement(
+    const element: React.ReactElement<IControlsTestProps> = React.createElement(
       ControlsTest,
       {
+        context: this.context,
         description: this.properties.description
       }
     );
